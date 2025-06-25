@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+
+// Component imports
+import JammerHeading from './components/jammerHeading/jammerHeading';
+import SearchBarContainer from './components/searchBar/searchBarContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <JammerHeading/>
+      <SearchBarContainer/>
     </div>
   );
 }
